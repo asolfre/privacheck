@@ -5,7 +5,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { useSession, signIn, signOut } from "next-auth/react";
-import { Menu, X, Shield } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import { PrivaCheckLogo } from "@/components/icons/privacheck-logo";
 import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -29,7 +30,7 @@ export function Navbar() {
           href="/"
           className="flex items-center gap-2 font-heading text-lg font-semibold tracking-tight"
         >
-          <Shield className="size-5" />
+          <PrivaCheckLogo className="size-5" />
           PrivaCheck
         </Link>
 

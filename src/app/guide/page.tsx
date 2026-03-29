@@ -9,7 +9,8 @@ import {
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
-import { Shield, AlertTriangle, Settings, Terminal, GitBranch, Copy, Check, ArrowLeft } from "lucide-react";
+import { AlertTriangle, Settings, Terminal, GitBranch, Copy, Check, ArrowLeft } from "lucide-react";
+import { PrivaCheckLogo } from "@/components/icons/privacheck-logo";
 import Link from "next/link";
 import { useState } from "react";
 import { buttonVariants } from "@/components/ui/button";
@@ -320,7 +321,7 @@ fi
 
       {/* Footer note */}
       <div className="mt-10 flex items-start gap-3 rounded-lg border bg-muted/30 p-4">
-        <Shield className="mt-0.5 size-5 shrink-0 text-primary" />
+        <PrivaCheckLogo className="mt-0.5 size-5 shrink-0 text-primary" />
         <div>
           <p className="text-sm font-medium">You&apos;re taking the right step</p>
           <p className="mt-1 text-sm text-muted-foreground">

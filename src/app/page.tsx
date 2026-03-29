@@ -10,7 +10,8 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Shield, Lock, Globe, ArrowRight, AlertTriangle } from "lucide-react";
+import { Lock, Globe, ArrowRight, AlertTriangle } from "lucide-react";
+import { PrivaCheckLogo } from "@/components/icons/privacheck-logo";
 import { cn } from "@/lib/utils";
 
 export default function HomePage() {
@@ -133,7 +134,7 @@ export default function HomePage() {
       {/* Footer */}
       <footer className="border-t px-4 py-6 text-center text-xs text-muted-foreground">
         <div className="mx-auto flex max-w-6xl items-center justify-center gap-2">
-          <Shield className="size-4" />
+          <PrivaCheckLogo className="size-4" />
           <span>PrivaCheck &mdash; Your commits, your privacy.</span>
         </div>
       </footer>
